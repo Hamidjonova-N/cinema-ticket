@@ -4,12 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+    <title>Cinema ticket</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="container">
+      <form
+        class="ticket-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
+        <header class="ticket-form-header">
+          <div class="title-wrapper">
+            <h1 class="title">O'zbekistonlik</h1>
+            <span class="badge">REAL 3D</span>
+            <span class="badge">12+</span>
+          </div>
+          <p class="cinema-name">Sunshine Cinema</p>
+          <time class="cinema-time" datetime="2023-07-14 19:00"
+            >Tonight, 7 PM</time
+          >
+          <button class="ticket-form-close" type="button">
+            <span class="visually-hidden">Close ticket form</span>
+          </button>
+        </header>
+      </form>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
