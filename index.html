@@ -8,6 +8,11 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -30,6 +35,41 @@
             <span class="visually-hidden">Close ticket form</span>
           </button>
         </header>
+        <hr class="divider" />
+        <section class="cinema">
+          <h2 class="visually-hidden">Cinema seats list</h2>
+          <div class="cinema-screen">
+            <img
+              class="cinema-poster"
+              src="img/cinema-poster.jpg"
+              srcset="img/cinema-poster.jpg 1x, img/cinema-poster@2x.jpg 2x"
+              alt="O'zbekistonlik cinema poster"
+              width="2922"
+              height="1643"
+            />
+          </div>
+          <div class="cinema-seats">
+            <ol class="cinema-seats-list">
+              <li class="cinema-seat">
+                <label class="cinema-seat-wrapper">
+                  <input class="cinema-seat-checkbox" type="checkbox" name="row_1_seat_1" />
+                  <span class="cinema-seat-control">
+                    <span class="cinema-seat-number">1</span>
+                  </span>
+                </label>
+              </li>
+
+              <li class="cinema-seat">
+                <label class="cinema-seat-wrapper cinema-vip-seat-wrapper">
+                  <input class="cinema-seat-checkbox" type="checkbox" name="row_1_seat_1" />
+                  <span class="cinema-seat-control">
+                    <span class="cinema-seat-number">1</span>
+                  </span>
+                </label>
+              </li>
+            </ol>
+          </div>
+        </section>
       </form>
     </div>
     <script src="js/main.js"></script>
